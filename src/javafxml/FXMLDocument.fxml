@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane id="shadowpane" fx:id="shadowpane" prefHeight="600.0" prefWidth="600.0" styleClass="background" stylesheets="@../css/css.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxml.FXMLDocumentController">
+   <children>
+      <AnchorPane id="mainAnchorPane" fx:id="mainAnchorPane" layoutX="50.0" layoutY="50.0" prefHeight="500.0" prefWidth="500.0" styleClass="#mainAnchorPane" stylesheets="@../css/css.css">
+         <children>
+            <AnchorPane id="topBarPane" fx:id="topBarPane" prefHeight="25.0" prefWidth="500.0" styleClass="#topBarPane" stylesheets="@../css/css.css">
+               <children>
+                  <HBox id="topBar" fx:id="topBar" alignment="TOP_RIGHT" prefHeight="25.0" prefWidth="500.0">
+                     <children>
+                        <Button fx:id="minimizeButton" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" maxHeight="25.0" maxWidth="50.0" minHeight="25.0" minWidth="50.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="50.0" styleClass="#minimizeButton" stylesheets="@../css/css.css">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="closeButton" contentDisplay="CENTER" layoutX="10.0" maxHeight="25.0" maxWidth="50.0" minHeight="25.0" minWidth="50.0" mnemonicParsing="false" onAction="#close" prefHeight="25.0" prefWidth="50.0" stylesheets="@../css/css.css" />
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
